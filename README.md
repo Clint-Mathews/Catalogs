@@ -13,6 +13,7 @@ Also require the use of password from UserSecrets as it is not provided from app
 Use Commands
 
 Create a new network - catalogNetwork.
+Also need to create the docker image for the project locally by using command in the root of the project : docker build -t catalog:v1 .
 
 Create the mongo container : docker run  -d --rm --name mongo -p 27017:27017 -v mongodbdata:/data/db -e MONGO_INITDB_ROOT_USERNAME=mongoadmin -e MONGO_INITDB_ROOT_PASSWORD=Pass#word1 --network=catalogNetwork mongo
 
