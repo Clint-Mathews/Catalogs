@@ -60,7 +60,11 @@ app.MapHealthChecks("/health/live", new HealthCheckOptions
     Predicate = (_) => false
 });
 
-app.UseHttpsRedirection();
+if (app.Environment.IsDevelopment())
+{
+    app.UseHttpsRedirection();
+}
+
 
 app.UseAuthorization();
 
