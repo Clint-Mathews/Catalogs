@@ -1,6 +1,6 @@
 # Catalogs
 
-Catalog in a CRUD .NET 6 Application which uses MongoDb as Database. And made production ready through docker and kubernetes.
+Catalog is a CRUD .NET 6 Application which uses MongoDb as Database. And made production ready through docker and kubernetes.
 
 ## To run locally require mongodb locally using docker
 
