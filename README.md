@@ -28,18 +28,11 @@ You can pull the docker image from docker container hub and run locally: https:/
 
 Commands to create pods:
 
-Open terminal in Kuberntes folder:
+Open terminal in Kuberntes folder: kubectl apply -f .\catalog.yaml , kubectl apply -f .\mongodb.yaml
 
-kubectl apply -f .\catalog.yaml
-kubectl apply -f .\mongodb.yaml
+Create generic secret for mongodb password : kubectl create secret generic catalog-secrets --from-literal=mongodb-password='Pass#word1'
 
-Create generic secret for mongodb password :
-kubectl create secret generic catalog-secrets --from-literal=mongodb-password='Pass#word1'
-
-To check deployments and pods:
-
-kubectl get deployments
-kubectl get pods  
+To check deployments and pods: kubectl get deployments , kubectl get pods  
 
 The service will be up in locahost:80 and the mongodb as a statefull service.
 
