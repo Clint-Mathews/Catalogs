@@ -28,7 +28,7 @@ You can pull the docker image from docker container hub and run locally: https:/
 
 Commands to create pods:
 
-Open terminal in Kuberntes folder: kubectl apply -f .\catalog.yaml , kubectl apply -f .\mongodb.yaml
+Open terminal in Kuberntes folder, then : kubectl apply -f .\catalog.yaml , kubectl apply -f .\mongodb.yaml
 
 Create generic secret for mongodb password : kubectl create secret generic catalog-secrets --from-literal=mongodb-password='Pass#word1'
 
