@@ -22,5 +22,5 @@ Create the catalog container : docker run -it --rm --name catalogs -p 8080:80 -e
 
 ## To Run the Application directly
 
-You can pull the docker container from container hub and run locally: https://hub.docker.com/r/clintmathews/catalog
+You can pull the docker image from docker container hub and run locally: https://hub.docker.com/r/clintmathews/catalog
 
