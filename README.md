@@ -19,3 +19,7 @@ Create the mongo container : docker run  -d --rm --name mongo -p 27017:27017 -v 
 Create the catalog container : docker run -it --rm --name catalogs -p 8080:80 -e MongoDbSettings:Host=mongo -e MongoDbSettings:Password=Pass#word1 --network=catalogNetwork catalog:v1
 
 
+## To Run the Application directly
+
+You can pull the docker container from container hub : https://hub.docker.com/r/clintmathews/catalog
+
