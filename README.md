@@ -1,6 +1,6 @@
-# Catelogs
+# Catalogs
 
-Catelog in a CRUD .NET 6 Application which uses MongoDb as Database. And made production ready through docker and kubernetes.
+Catalog in a CRUD .NET 6 Application which uses MongoDb as Database. And made production ready through docker and kubernetes.
 
 ## To run locally require mongodb locally using docker
 
@@ -21,5 +21,5 @@ Create the catalog container : docker run -it --rm --name catalogs -p 8080:80 -e
 
 ## To Run the Application directly
 
-You can pull the docker container from container hub : https://hub.docker.com/r/clintmathews/catalog
+You can pull the docker container from container hub and run locally: https://hub.docker.com/r/clintmathews/catalog
 
