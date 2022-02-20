@@ -36,7 +36,8 @@ kubectl apply -f .\mongodb.yaml
 Create generic secret for mongodb password :
 kubectl create secret generic catalog-secrets --from-literal=mongodb-password='Pass#word1'
 
-To check deployments and pods
+To check deployments and pods:
+
 kubectl get deployments
 kubectl get pods  
 
