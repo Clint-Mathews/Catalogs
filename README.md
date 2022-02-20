@@ -2,6 +2,13 @@
 
 Catelog in a CRUD .NET 6 Application which uses MongoDb as Database. And made production ready through docker and kubernetes.
 
+## To run locally require mongodb locally using docker
+
+To create the mongo docker container : 
+docker run  -d --rm --name mongo -p 27017:27017 -v mongodbdata:/data/db -e MONGO_INITDB_ROOT_USERNAME=mongoadmin -e MONGO_INITDB_ROOT_PASSWORD=Pass#word1 mongo
+
+Also require the use of password from UserSecrets as it is not provided from app settings.
+
 ## To run the code using docker containers
 Use Commands
 
